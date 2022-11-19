@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lucy Beck's Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="nav-container">
+      <nav class="nav-contents">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects-container">Projects</a></li>
+          <li><a href="#bio-container">Bio</a></li>
+          <li><a href="#contact-container">Contact</a></li>
+          <li><a href="#form-container">Form</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="banner-container">
+      <div class="banner-contents">
+        <h1>Lucy Beck</h1>
+        <h2>Aspiring Software Engineer</h2>
+        <a id="download-resume-btn" href="resources/LUCY_BECK_RESUME.pdf" target="_blank">View Resume</a>  
+      </div>
+    </div>
+
+    <div id="projects-container">
+      <div>
+        <h1>Featured Projects</h1>
+      </div>
+
+      <div class="projects-grid">
+        <a href="cwf.html">
+          <div class="projects-grid-item">
+            <h2>Challenge with Friends</h2>
+            <p>A multiplayer game in which players compete to complete the most challenges.</p>
+            <img src="images/challenge-with-friends.png" alt="Challenge with Friends">
+          </div>
+        </a>
+
+        <div class="projects-grid-item">
+          <h2>Aliens Hate Avocados</h2>
+          <p>A 3D action game in which players use Avocado Goop Guns to defend cows from enemy UFOs!</p>
+          <img src="images/aha-action-shot.png" alt="Aliens Hate Avocados">
+        </div>
+
+        <div class="projects-grid-item">
+          <h2>Froggo</h2>
+          <p>An arcade game in which players help frogs get to their homes by crossing busy roads and hazardous waters.</p>
+          <img src="images/froggo.png" alt="Froggo">
+        </div>
+
+        <div class="projects-grid-item">
+          <h2>Photo Editor</h2>
+          <p>A modern photo editing app that supports photo enhancements, effects, and a variety of photo filters.</p>
+          <img src="images/photo-editor.png" alt="Photo Editor">
+        </div>
+      </div>
+    </div>
+
+    <div id="bio-container">
+      <div class="bio-info">
+        <div>
+          <h1>Hello, my name is Lucy Beck.</h1>
+          <h2>I am a Junior studying Computer Science at Northwestern University. I am an incoming Software Engineer Intern at Dropbox, and I was previsouly a Software Engineer Intern at Intuit, Fidelity Investments, and Reworld Inc.</h2>
+        </div>
+        <div id="bio-headshot">
+          <img src="resources/LUCY_BECK_HEADSHOT.jpeg" alt="Headshot of Lucy Beck">
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-container">
+      <div class="contact-info">
+        <h1>Contact</h1>
+        <h2>Email: lucybeck2024@u.northwestern.edu</h2>
+        <h2>Phone number: (630)797-0025</h2>
+        <h2>LinkedIn: <a href="https://www.linkedin.com/in/lucywbeck/" target="_blank">Lucy Beck</a></h2>
+      </div>
+    </div>
+
+    <div id="form-container">
+      <div class="form-info">
+        <h1>Contact Form</h1>
+      <form id="contact-form" action="https://formspree.io/f/mjvlzebb" method="POST">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required aria-required="true">
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required aria-required="true">
+        </div>
+        <div>
+          <label for="subject">Subject: </label>
+          <input type="text" name="subject" id="subject" required aria-required="true">
+        </div>
+        <div>
+          <label for="message">Message: </label>
+          <input type="text" name="message" id="message" required aria-required="true">
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+        <div id="contact-form-status" class=""></div>
+      </form>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
